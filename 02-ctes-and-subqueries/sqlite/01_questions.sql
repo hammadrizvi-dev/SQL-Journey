@@ -1,0 +1,13 @@
+-- Module 02: CTEs (WITH) & Subqueries Practice Questions
+-- Database: Same 4-table schema from Module 01 (departments, employees, projects, employee_projects)
+
+-- 1. CTE use karke har department ki average salary nikalo, aur un employees ko dikhao jo apne department ke average se zyada kamate hain.
+-- 2. CTE use karke har employee ke total project hours nikalo; sirf unhe dikhao jinhone 150 se zyada hours kaam kiya hai.
+-- 3. Har department me sabse zyada salary lene wale employee(s) ko dikhao (CTE + JOIN).
+-- 4. Aise projects dikhao jinka total hours worked saare projects ke average total hours se zyada hai.
+-- 5. Har employee ki salary aur company average salary ka difference (salary_diff) dikhao.
+-- 6. Aise employees dikhao jo kisi bhi 'Active' project par assigned NAHI hain (NOT IN / NOT EXISTS).
+-- 7. Har location (city) ke total employees aur total salary bill nikalo, aur sirf wahi locations dikhao jahan bill > 200000 hai.
+-- 8. CTE use karke har manager ke under kitne direct reports hain aur unki average salary kitni hai, ye dikhao.
+-- 9. Har project ka budget per hour worked (budget / total_hours) nikalo (0 hours wale projects ko avoid karo).
+-- 10. Top 3 highest-paid employees ka naam, department, aur unke total project hours dikhao.

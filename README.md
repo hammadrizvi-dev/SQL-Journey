@@ -29,8 +29,8 @@ SQL-Journey/
 | Module | Topics | Status |
 |---|---|---|
 | **01** | Basics, Aggregates, `GROUP BY`, `HAVING`, `JOIN`s, Self-Join, `CASE`, Subqueries (18 queries) | ✅ Done |
-| **02** | CTEs (`WITH`) & Multi-step Business Queries | 🔄 Next |
-| **03** | Window Functions (`ROW_NUMBER`, `RANK`, `DENSE_RANK`, `LAG`, `LEAD`, Running Totals) | ⏳ Upcoming |
+| **02** | CTEs (`WITH`) & Multi-step Business Queries (10 queries) | ✅ Done |
+| **03** | Window Functions (`ROW_NUMBER`, `RANK`, `DENSE_RANK`, `LAG`, `LEAD`, Running Totals) | 🔄 Next |
 | **04** | LeetCode / Interview Top 50 SQL Problems | ⏳ Upcoming |
 | **05** | End-to-End Business Analytics Case Study (Sales / E-commerce) | ⏳ Upcoming |
 
