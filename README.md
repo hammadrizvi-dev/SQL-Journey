@@ -21,6 +21,10 @@ SQL-Journey/
 │   ├── sqlite/                    # Runnable anywhere with sqlite3 (01_schema, 02_questions, 03_solutions)
 │   ├── mysql/                     # MySQL 8+ compatible schema & solutions
 │   └── NOTES.md                   # Quick revision notes
+├── 02-ctes-and-subqueries/
+│   ├── sqlite/                    # 10 CTE & Subquery problems on HR/Projects schema
+│   ├── business-analytics/        # 10 Revenue, Cohort & Retention analytics queries + schema
+│   └── NOTES.md                   # Quick revision notes
 └── README.md
 ```
 
@@ -29,7 +33,7 @@ SQL-Journey/
 | Module | Topics | Status |
 |---|---|---|
 | **01** | Basics, Aggregates, `GROUP BY`, `HAVING`, `JOIN`s, Self-Join, `CASE`, Subqueries (18 queries) | ✅ Done |
-| **02** | CTEs (`WITH`) & Multi-step Business Queries (10 queries) | ✅ Done |
+| **02** | CTEs (`WITH`), Subqueries & Business Analytics — Revenue, Cohort, Retention (20 queries) | ✅ Done |
 | **03** | Window Functions (`ROW_NUMBER`, `RANK`, `DENSE_RANK`, `LAG`, `LEAD`, Running Totals) | 🔄 Next |
 | **04** | LeetCode / Interview Top 50 SQL Problems | ⏳ Upcoming |
 | **05** | End-to-End Business Analytics Case Study (Sales / E-commerce) | ⏳ Upcoming |

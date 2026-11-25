@@ -21,5 +21,7 @@ jobs:
           sqlite3 -bail test.db < 01-basics-and-joins/sqlite/01_schema_and_seed.sql
           sqlite3 -bail test.db < 01-basics-and-joins/sqlite/03_solutions.sql > /dev/null
           sqlite3 -bail test.db < 02-ctes-and-subqueries/sqlite/02_solutions.sql > /dev/null
-          rm -f test.db
-          echo "All SQLite queries (Modules 01 & 02) passed with zero errors!"
+          sqlite3 -bail analytics.db < 02-ctes-and-subqueries/business-analytics/sqlite/01_schema_and_seed.sql
+          sqlite3 -bail analytics.db < 02-ctes-and-subqueries/business-analytics/sqlite/03_solutions.sql > /dev/null
+          rm -f test.db analytics.db
+          echo "All SQLite queries (Modules 01 & 02 - 38 queries) passed with zero errors!"

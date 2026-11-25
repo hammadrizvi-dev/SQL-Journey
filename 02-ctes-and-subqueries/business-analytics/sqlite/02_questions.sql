@@ -1,0 +1,13 @@
+-- Module 02 (Part 2): Business Analytics (Revenue, Cohort & Retention) Practice Questions
+-- Database: 3-table SaaS / Subscription schema (customers, plans, orders)
+
+-- 1. Har month ka total recognized revenue (sirf 'Completed' orders), completed order count, aur Average Order Value (AOV) nikalo.
+-- 2. Month-over-Month (MoM) revenue growth % nikalo (CTE + previous month self-join use karke).
+-- 3. Har subscription plan (Starter, Pro, Team) ka completed revenue, refunded order count, total orders, aur refund rate % nikalo.
+-- 4. Acquisition channel (Organic, Paid Ads, Referral, Social) ke hisaab se total signups, paying customers, conversion rate %, total revenue, aur ARPU nikalo.
+-- 5. Har signup cohort month (YYYY-MM) ka cohort size, total lifetime revenue, aur revenue per signed-up customer nikalo.
+-- 6. Monthly Cohort Retention Table banao: har signup cohort ke liye Month 0, Month 1, Month 2... me kitne active paying users bache aur unka retention % kya raha.
+-- 7. Repeat Purchase Rate nikalo: kitne paying customers One-Time Buyer (1 completed order) hain vs Repeat Buyer (2+ completed orders), aur unka % share dikhao.
+-- 8. Har month me New Customer Revenue vs Returning Customer Revenue ka split dikhao.
+-- 9. Churned / At-Risk paying customers dhoondho: jinhone May 2026 se pehle kam se kam 1 completed order diya, par May 2026 ('2026-05') me koi completed order nahi diya.
+-- 10. Top 5 highest Lifetime Value (LTV) customers dikhao — unka naam, signup cohort, active months count, total completed orders, aur total spend.
