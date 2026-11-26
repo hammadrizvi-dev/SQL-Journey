@@ -1,0 +1,13 @@
+-- Module 03 (Part 1): Window Functions — Ranking & Partition Analytics Questions
+-- Database: Same 4-table schema from Module 01 (departments, employees, projects, employee_projects)
+
+-- 1. Sabhi employees ko salary ke hisaab se (highest first) rank karo, aur ek hi query me ROW_NUMBER(), RANK(), aur DENSE_RANK() teeno dikhao taaki tie (100,000) ka difference clear dikhe.
+-- 2. Har department ke Top 2 highest-paid employees nikalo (CTE + DENSE_RANK() PARTITION BY department_id).
+-- 3. Bina GROUP BY lagaye har employee ki row ke saath uske department ki avg_salary, max_salary, aur max se gap (dept_max - salary) dikhao.
+-- 4. Har employee ka apni department ke total salary bill me percentage contribution (%) calculate karo.
+-- 5. Har department me joining seniority (hire_date ascending) ke hisaab se employees ko rank karo aur sabse senior employee ko 'Department Pioneer' mark karo.
+-- 6. NTILE(4) use karke sabhi employees ko 4 salary quartiles / compensation tiers me divide karo.
+-- 7. Har project par sabse zyada hours kaam karne wale top contributor(s) nikalo (RANK() OVER PARTITION BY project_id).
+-- 8. Har employee-project assignment ke liye employee ke hours, project ke total hours, aur us project me employee ka % contribution dikhao.
+-- 9. Har office location (city) ke andar employees ko salary ke hisaab se rank karo aur saath me us city ka total headcount dikhao.
+-- 10. Interview Classic: Company ki 2nd highest salary lene wale employee(s) ko DENSE_RANK() + CTE se nikalo (LIMIT/OFFSET bina).

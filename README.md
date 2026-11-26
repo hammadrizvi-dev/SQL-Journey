@@ -25,6 +25,9 @@ SQL-Journey/
 │   ├── sqlite/                    # 10 CTE & Subquery problems on HR/Projects schema
 │   ├── business-analytics/        # 10 Revenue, Cohort & Retention analytics queries + schema
 │   └── NOTES.md                   # Quick revision notes
+├── 03-window-functions/
+│   ├── sqlite/                    # 10 Ranking, NTILE & Partition window function problems
+│   └── NOTES.md                   # Quick revision notes (ROW_NUMBER vs RANK vs DENSE_RANK)
 └── README.md
 ```
 
@@ -34,7 +37,8 @@ SQL-Journey/
 |---|---|---|
 | **01** | Basics, Aggregates, `GROUP BY`, `HAVING`, `JOIN`s, Self-Join, `CASE`, Subqueries (18 queries) | ✅ Done |
 | **02** | CTEs (`WITH`), Subqueries & Business Analytics — Revenue, Cohort, Retention (20 queries) | ✅ Done |
-| **03** | Window Functions (`ROW_NUMBER`, `RANK`, `DENSE_RANK`, `LAG`, `LEAD`, Running Totals) | 🔄 Next |
+| **03 (Part 1)** | Window Functions — `ROW_NUMBER`, `RANK`, `DENSE_RANK`, `NTILE`, `PARTITION BY` (10 queries) | ✅ Done |
+| **03 (Part 2)** | Window Functions — `LAG`, `LEAD`, Running Totals, Moving Averages | 🔄 Next |
 | **04** | LeetCode / Interview Top 50 SQL Problems | ⏳ Upcoming |
 | **05** | End-to-End Business Analytics Case Study (Sales / E-commerce) | ⏳ Upcoming |
 
