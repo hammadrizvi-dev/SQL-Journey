@@ -1,0 +1,13 @@
+-- Module 03 (Part 2): Time-Series, LAG/LEAD, Running Totals & Moving Averages
+-- Database: 02-ctes-and-subqueries/business-analytics/sqlite/01_schema_and_seed.sql (customers, plans, orders)
+
+-- 1. Monthly recognized revenue with previous month revenue (LAG) and MoM growth % — bina self-join ke!
+-- 2. Cumulative (Running Total) recognized revenue month-by-month using SUM() OVER (ORDER BY order_month).
+-- 3. 3-Month Moving Average of monthly revenue using ROWS BETWEEN 2 PRECEDING AND CURRENT ROW.
+-- 4. Har customer ka order-by-order running lifetime spend nikalo (PARTITION BY customer_id).
+-- 5. Har completed order ke saath us customer ki next order date (LEAD) aur dono orders ke beech ke days nikalo.
+-- 6. Plan Upgrade / Expansion Tracker: LAG(monthly_price) se detect karo kis customer ne kab plan Upgrade, Downgrade ya Same renew kiya.
+-- 7. FIRST_VALUE() aur LAST_VALUE() use karke har customer ka first plan vs latest plan ek hi row me compare karo (frame trap avoid karke!).
+-- 8. Har month ka revenue, peak month revenue se kitna door hai (MAX OVER ()) aur overall revenue me % share nikalo.
+-- 9. Customer LTV Pareto (80/20) Analysis: Customers ko LTV descending sort karke cumulative revenue % nikalo.
+-- 10. City-wise order sequence number aur har city ka cumulative revenue progression dikhao.

@@ -1,0 +1,15 @@
+-- Module 04 (Batch 1): Interview SQL 50 — Core Patterns (12 Verified Problems)
+-- Database: 01-basics-and-joins/sqlite/01_schema_and_seed.sql (departments, employees, projects, employee_projects)
+
+-- 1. Un employees ko nikalo jinki salary unke khud ke manager se zyada hai (Self-Join Interview Classic).
+-- 2. Har department me employees ka PERCENT_RANK() aur CUME_DIST() nikalo taaki salary percentile dikhe.
+-- 3. Har department ke andar har employee ki salary aur usse theek ek step upar wale colleague ki salary ka difference dikhao (LAG).
+-- 4. Har department ke andar salary descending order me cumulative payroll % calculate karo (Pareto payroll view).
+-- 5. Aise projects nikalo jinke total logged hours, sabhi projects ke average logged hours se zyada hain (CTE + scalar comparison).
+-- 6. Relational Division: Kaun se employees saare 'Active' projects par kaam kar rahe hain?
+-- 7. Aise departments nikalo jahan HAR EK employee ki salary >= 90,000 hai (HAVING MIN(salary) >= 90000).
+-- 8. Company ke hiring timeline ke saath cumulative headcount growth dikhao (COUNT(*) OVER ORDER BY hire_date).
+-- 9. Ek hi department ke aise employee pairs nikalo jinki salary ka difference 15,000 ya usse kam hai (Non-Equi Self-Join without duplicates).
+-- 10. Har project (zero-hour projects bhi!) ka total hours, assigned headcount aur utilization status label karo.
+-- 11. Har department ka 2nd most senior employee nikalo (hire_date ascending order me ROW_NUMBER = 2).
+-- 12. Executive Department Dashboard (Multi-CTE): Har department ka headcount, total payroll, highest earner, aur total active project hours ek saath dikhao.
